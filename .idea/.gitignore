@@ -1,0 +1,11 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+# Editor-based HTTP Client requests
+/httpRequests/
+/misc.xml
+/modules.xml
+/Portfolio.iml
+/inspectionProfiles/Project_Default.xml
+/dictionaries/rocka.xml
+/vcs.xml
