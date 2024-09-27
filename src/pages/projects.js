@@ -1,6 +1,6 @@
 import React from 'react';
 import Button from '@material-ui/core/Button';
-import LanguageIcon from '@material-ui/icons/Language';
+import LanguageIcon from '@mui/icons-material/Language';
 import { MY_DATA } from '../data';
 
 
@@ -9,7 +9,7 @@ function Projects() {
 
     const getDesc = (x) => {
         return x.desc?.split("//n").map(item => {
-            if (!item) return;
+            // if (!item) return;
             return <div>
                 -{item}
             </div>

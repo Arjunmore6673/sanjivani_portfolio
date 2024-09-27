@@ -5,13 +5,13 @@ import {
   VerticalTimelineElement,
 } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
-import WorkIcon from '@material-ui/icons/Work';
+import WorkIcon from '@mui/icons-material/Work';
 import { MY_DATA } from '../data';
 
 function Experience() {
   const getDesc = (x) => {
     return x.desc?.split('//n').map((item) => {
-      if (!item) return;
+      // if (!item) return;
       return <div>-{item}</div>;
     });
   };

@@ -1,34 +1,33 @@
 import './App.css';
 import LandingPage from './pages/landing'
 import React from "react";
-import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Card3d from "./components/Card3d";
+import { ThemeProvider, createTheme, makeStyles } from '@material-ui/core/styles';
+const theme = createTheme();
+const useStyles = makeStyles((theme) => {
+    root: {
+        // some CSS that accesses the theme
+    }
+});
+
+
 
 
 function App() {
-    return (
-        <Router>
-            <Switch>
+    const classes = useStyles(); // ❌ If you have this, consider moving it
+    return <ThemeProvider theme={theme}>
 
 
-                <Route path="/card3d">
-                    <Card3d/>
-                </Route>
+        <BrowserRouter>
+            <Routes>
+                <Route path="/card3d" element={<Card3d />} />
+                <Route path="portfolio-arjun-more" element={<LandingPage from={'portfolio'} />} />
+                <Route path="/" element={<LandingPage />} />
+            </Routes>
+        </BrowserRouter>
+    </ThemeProvider>;
 
-
-                <Route path="portfolio-arjun-more">
-                    <LandingPage
-                        from={'portfolio'}/>
-                </Route>
-
-
-                <Route path="/">
-                    <LandingPage/>
-                </Route>
-
-            </Switch>
-        </Router>
-    );
 }
 
 export default App;

@@ -1,0 +1,11 @@
+ npm i react && react-dom && react-full-page && npm i react-photo-gallery && npm i react-router-dom && npm i react-scripts && npm i react-scroll && npm i react-spring && npm i react-typed && npm i react-vertical-timeline-component && npm i styled-components && npm i typed.js && npm i web-vitals
+
+
+
+
+     "@material-ui/core": "^4.11.2",
+    "@material-ui/icons": "^4.11.2",
+    "@testing-library/jest-dom": "^5.11.6",
+    "@testing-library/react": "^11.2.2",
+    "@testing-library/user-event": "^12.6.0",
+    "bootstrap-icons": "^1.2.2",

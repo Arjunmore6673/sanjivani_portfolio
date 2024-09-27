@@ -1,7 +1,9 @@
-import React, { Suspense } from "react";
+import React, { Suspense, lazy } from "react";
 import Footer from "./footer";
 import "./styles.css";
 // import Typed from 'react-typed';
+import { ReactTyped as Typed } from "react-typed";
+
 import { Link } from "react-scroll";
 import { MY_DATA } from "../data";
 import aboutImage from "../images/Arjun.jpg";
@@ -9,8 +11,6 @@ import About from "./about";
 import Collab from "./collab";
 import Experience from "./experience";
 import Projects from "./projects";
-
-const Typed = React.lazy(() => import("react-typed"));
 
 const LandingPage = () => {
   const { personalDetails } = MY_DATA;
