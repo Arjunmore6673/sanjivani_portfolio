@@ -60,23 +60,30 @@ export const MY_DATA = {
     },
   },
   personalDetails: {
-    name: 'Arjun more',
-    mail: 'rockajm@live.com',
-    number: '7066064461',
+    name: 'Sanjivani more',
+    mail: 'sanjivanishinde8086@gmail.com',
+    number: '9373601164',
     findMe: 'Pune, Maharashtra',
     desc:
       'I love to connect with people and love to talk with them, help them,//n' +
       '                                     discuss with them about life aspects, technologies, adventure sports, etc. ',
     linkedIn: 'https://www.linkedin.com/in/arjun-more-16905491/',
     canDo: [
-      'I am a Full-Stack Developer',
-      'Mobile Application Developer ',
-      'Web Application Developer',
+      'I am a Bio Biostatistician',
+      'Data Analyst',
     ],
     canDoDetails: [
-      'I am a Software Developer who is passionate about building',
-      "amazing software's and applications",
-      'I write code to build useful stuff!!',
+      `The Goal is to analysis and prediction of Today's life style on
+Heart disease using Machine Learning algorithms`,
+      `Analysis: Applied
+different Machine Learning techniques, from Random Forest classifier we
+found out that the "Gender, Tension, Smoking" variables is most important
+for prediction where as Logistic Regression gives more accurate prediction
+as compared to other models`,
+
+      `Techniques: Naive Baye's Classiner, logistic
+Regression, Decision Tree, Feature selection using Chi-Square Test`,
+
     ],
     social: [
       {

@@ -1,7 +1,7 @@
-import React, {useState} from 'react';
-import profile from '../../images/Arjun.jpg'
+import React, { useState } from 'react';
+import profile from '../../images/sanjivani.jpg'
 import styled from 'styled-components'
-import {animated, useSpring} from 'react-spring'
+import { animated, useSpring } from 'react-spring'
 
 
 const StyledImg = styled.img`
@@ -52,14 +52,14 @@ const GlassCard = () => {
         style={{
             transform: props.xys.interpolate(trans)
         }}
-        onMouseMove={({clientX: x, clientY: y}) => {
-            set({xys: calc(x, y)})
+        onMouseMove={({ clientX: x, clientY: y }) => {
+            set({ xys: calc(x, y) })
         }}
         onMouseLeave={() => {
-            set({xys: [0, 0, 1]})
+            set({ xys: [0, 0, 1] })
         }}
     >
-        <StyledImg src={profile}/>
+        <StyledImg src={profile} />
         <StyledH1>Arjun more</StyledH1>
         <StyledH3>Full stack developer</StyledH3>
     </ContainerMy>;

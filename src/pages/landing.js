@@ -6,7 +6,7 @@ import { ReactTyped as Typed } from "react-typed";
 
 import { Link } from "react-scroll";
 import { MY_DATA } from "../data";
-import aboutImage from "../images/Arjun.jpg";
+import aboutImage from "../images/sanjivani.jpg";
 import About from "./about";
 import Collab from "./collab";
 import Experience from "./experience";

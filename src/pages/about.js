@@ -1,11 +1,11 @@
 import React from "react";
 import "./styles.css";
-import aboutImage from "../images/Arjun.jpg";
-import {MY_DATA} from '../data'
+import aboutImage from "../images/sanjivani.jpg";
+import { MY_DATA } from '../data'
 
 function About() {
 
-    const {techStack,personalDetails} = MY_DATA;
+    const { techStack, personalDetails } = MY_DATA;
     return (
         <div className="aboutPage mt-5" id="about">
             <div className="container">
@@ -13,7 +13,7 @@ function About() {
 
                 <div
                     className="row"
-                    style={{marginTop: "5%", display: "flex", justifyContent: "center"}}
+                    style={{ marginTop: "5%", display: "flex", justifyContent: "center" }}
                 >
                     <div
                         className="col-xl-4 col-md-4 mb-30"
@@ -31,21 +31,21 @@ function About() {
                     </div>
                     <div
                         className="col-xl-4 col-md-4 mb-30"
-                        style={{alignSelf: "center"}}
+                        style={{ alignSelf: "center" }}
                     >
                         <p>
                             {personalDetails.mySelf[0]}
-                            <br/>
-                            <br/>
+                            <br />
+                            <br />
                             {personalDetails.mySelf[1]}
                         </p>
                     </div>
                 </div>
 
                 <div className=" py-5 mx-auto skillcards-wrapper row ">
-                    <SkillCard details={techStack.web}/>
-                    <SkillCard details={techStack.mobile}/>
-                    <SkillCard details={techStack.backend}/>
+                    <SkillCard details={techStack.web} />
+                    <SkillCard details={techStack.mobile} />
+                    <SkillCard details={techStack.backend} />
                 </div>
             </div>
         </div>
@@ -59,7 +59,7 @@ const getCamelName = (name = "") => {
     return result?.map((x, i) => (i === 0 ? x.toUpperCase() : x.toLowerCase()));
 };
 
-const SkillCard = ({details = {}}) => {
+const SkillCard = ({ details = {} }) => {
     return (
         <div className="skillcard" style={{}}>
             <div
@@ -83,7 +83,7 @@ const SkillCard = ({details = {}}) => {
                                 marginBottom: 10,
                             }}
                         >
-                            <div style={{width: 40}}>
+                            <div style={{ width: 40 }}>
                                 {x.icon && (
                                     <img
                                         src={x.icon}
