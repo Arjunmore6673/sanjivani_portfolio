@@ -1,5 +1,5 @@
 import React from 'react';
-import Button from '@material-ui/core/Button';
+import Button from '@mui/material/Button';
 import LanguageIcon from '@mui/icons-material/Language';
 import { MY_DATA } from '../data';
 
@@ -21,8 +21,8 @@ function Projects() {
             <p className="project-subheading text-center">The application which I have developed using my knowledge</p>
             <div className="">
                 <div className="row p-5 m-auto ">
-                    {projects.map(x => {
-                        return <div className="projectcard ">
+                    {projects.map((x, i) => {
+                        return <div className="projectcard " key={i}>
                             <div className="header">
                                 <h3>{x.title}</h3><br></br>
                                 <h5>{getDesc(x)}
